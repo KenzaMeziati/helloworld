@@ -65,4 +65,4 @@ st.write("You're scheduled for:",appointment)
 st.subheader('Datetime slider')
 start_time=st.slider("Select your Datetime:", value=datetime(2022,9,4,10,30), 
                      format="DD/MM/YY - hh:mm")
-st.write("Start time:" start_time)                       
+st.write("Start time:", start_time)                       
