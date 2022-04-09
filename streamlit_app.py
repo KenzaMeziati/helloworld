@@ -41,5 +41,28 @@ c=alt.Chart(df2).mark_circle().encode(
     )
 st.write(c)
 
+#%%Day8
+from datetime import time, datetime
 
+st.header('st.slider')
 
+#Exple 1
+st.subheader('slider')
+age=st.slider('How old are you ?', 0,130,24)
+st.write("I'm",age,'years old')
+
+#Exple2
+st.subheader('Range slider')
+values=st.slider('select a range of values',0.0,100.0,(25.0, 75.0))
+st.write('values:',values)
+
+#Exple3
+st.subheader('Range time slider')
+appointment = st.slider("Schedule your appointment:", value=(time(9,30),time(12,30))
+st.write("You're scheduled for:",appointment)
+
+#Exple4
+st.subheader('Datetime slider')
+start_time=st.slider("Select your Datetime:", value=datetime(2022,9,4,10,30), 
+                     format="DD/MM/YY - hh:mm")
+st.write("Start time:" start_time)                       
