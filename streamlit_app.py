@@ -58,7 +58,7 @@ st.write('values:',values)
 
 #Exple3
 st.subheader('Range time slider')
-appointment = st.slider("Schedule your appointment:", value=(time(9,30),time(12,30))
+appointment=st.slider("Schedule your appointment:", value=(time(9,30),time(12,30))
 st.write("You're scheduled for:",appointment)
 
 #Exple4
