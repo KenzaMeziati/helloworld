@@ -66,3 +66,11 @@ st.subheader('Datetime slider')
 start_time=st.slider("Select your Datetime:", value=datetime(2022,4,9,10,30), 
                      format="DD/MM/YY - hh:mm")
 st.write("Start time:", start_time)                       
+
+#%%Day9
+st.header('Line chart')
+chart_data=pd.DataFrame(
+   np.random.randn(20,3),
+   columns=['a','b','c'])
+st.line_chart(chart_data)
+
