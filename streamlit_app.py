@@ -21,7 +21,7 @@ st.write('Hello, *World!* :wave:')
 
 #Example 2
 st.write(2022)
-
+ 
 #Example 3
 st.latex(r'''1^{st} DataFrame''')
 df=pd.DataFrame({
@@ -74,3 +74,10 @@ chart_data=pd.DataFrame(
    columns=['a','b','c'])
 st.line_chart(chart_data)
 
+#%%Day 10
+st.header('st.selectbox')
+
+option = st.selectbox(
+   "What's your degree ?",
+   ('Engineer', 'PhD Student', 'Technician'))
+st.write("You're degree is:", option)
