@@ -83,7 +83,7 @@ option = st.selectbox(
 st.write("You're degree is:", option)
 
 #Day11
-st.header('Multiselect')
+st.header('st.Multiselect')
 options=st.multiselect(
    "What are your favourite colors?",
    ['Green','White','Blue','Gray','Yellow','Pink'],
