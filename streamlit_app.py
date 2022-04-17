@@ -89,3 +89,21 @@ options=st.multiselect(
    ['Green','White','Blue','Gray','Yellow','Pink'],
    ['Green','Blue'])
 st.write("Your answer is: ",options)
+
+#Day12
+st.header('st.checkbox')
+
+st.write("What would you like to order?")
+juice = st.checkbox('Juice')
+tea = st.checkbox('Tea')
+waffle = st.checkbox('Waffle')
+
+if water:
+   st.write("Here you go 🥤 ")
+if tea:
+   st.write("Here's your tea 🍵")
+if waffle:
+   st.write("Miam! looks delicious 🧇")
+   
+   
+
