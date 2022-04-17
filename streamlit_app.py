@@ -98,7 +98,7 @@ juice = st.checkbox('Juice')
 tea = st.checkbox('Tea')
 waffle = st.checkbox('Waffle')
 
-if water:
+if juice:
    st.write("Here you go 🥤 ")
 if tea:
    st.write("Here's your tea 🍵")
