@@ -2,6 +2,8 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import altair as alt
+st.set_page_config(layout="wide")
+
 #st.write('Hello world! ')
 
 st.header('st.write()')
@@ -15,7 +17,7 @@ else:
    
 ###%% 
 #Day19
-st.set_page_config(layout='wide')
+
 st.header('How to layout your stramlit app')
 
 with st.expander('About this App'):
