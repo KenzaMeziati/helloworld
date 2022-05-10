@@ -11,6 +11,48 @@ if st.button('Whos'):
    st.write('Kenza')
 else:
    st.write('None')
+   
+   
+###%% 
+#Day19
+st.set_page_config(layout='wide')
+st.header('How to layout your stramlit app')
+
+with st.expander('About this App'):
+   st.write("This app shows the various ways on how you can layout your Streamlit App")
+   st.image("https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.png", width=150)
+   
+st.sidebar.header("Inputs")
+user_name = st.sidebar.text_input("What is your name?")
+user_emoji = st.sidebar.selectbox("Choose your favorite emoji",['', '😄', '😆', '😊', '😍', '😴', '😕', '😱'])
+user_food = st.sidebar.selectbox("What is your favorite food ?", ['', '🍜','🥜','🥐','🍛','🍔','🍕'])
+
+st.header('Output')
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+  if user_name != '':
+     st.write(f"Hello {user_name}!")
+  else :
+     st.write("👈 Please enter your **name**")
+
+with col2:
+   if user_emoji != '':
+      st.write(f'Your favorite emoji is {user_emjo}')
+   else : 
+      st.write('👈 Please select an **emoji**')
+      
+with col3:
+   if user_food != '':
+      st.write(f"🍴 **{user_food}** is your favorite food")
+   else : 
+      st.write("👈 Please choose your favorite **food**")
+  
+   
+
+
+
 
 #%% Day 5
 
@@ -104,6 +146,10 @@ if tea:
    st.write("Here's your tea 🍵")
 if waffle:
    st.write("Miam! looks delicious 🧇")
-   
+
+
+
+
+
    
 
